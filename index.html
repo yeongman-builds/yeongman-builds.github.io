@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="외식 매장 보고 자동화와 검산 흐름을 설계한 매장 운영 매니저 Yeongman Park의 포트폴리오">
+  <title>Yeongman Park · 매장 운영 포트폴리오</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead shell">
+    <span class="name"><span>~/</span>yeongman-builds</span>
+    <span class="role">매장 운영 매니저</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="intro">
+      <p class="eyebrow"><span class="comment-mark" aria-hidden="true">//</span> 외식 매장 운영 포트폴리오</p>
+      <h1 id="intro">매장 보고는 자동으로, 최종 판단은 사람이</h1>
+      <p class="hero-summary">POS 자료 수집부터 보고 초안까지 자동화 흐름을 설계하고, 숫자 검산과 최종 판단은 사람이 하도록 나눴습니다.</p>
+      <a class="button" href="#case">대표 사례 보기 <span aria-hidden="true">↓</span></a>
+      <figure class="terminal">
+        <figcaption>보고 흐름 예시 · 실제 실행 로그 아님</figcaption>
+        <div class="terminal-window">
+          <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <ul>
+            <li>✓ 새벽 POS 수집</li>
+            <li>✓ 원자료 대조</li>
+            <li>… 사람 확인 대기</li>
+          </ul>
+        </div>
+      </figure>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 280 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35 73 105 33 175 73 105 113Z" fill="#eaf1fc" stroke="#9db3d8"/>
+          <path d="M35 73v16l70 40 70-40V73M105 113v16" stroke="#9db3d8"/>
+          <path d="m62 73 43-24 43 24-43 24Z" stroke="#2f63c9"/>
+          <path d="M105 129v36l53 30" stroke="#9db3d8" stroke-dasharray="4 5"/>
+          <path d="m106 196 70-40 70 40-70 40Z" fill="#2f63c9" stroke="#1f4fa8"/>
+          <path d="M106 196v16l70 40 70-40v-16m-70 40v16" stroke="#1f4fa8"/>
+          <path d="m159 195 13 8 24-14" stroke="#ffffff" stroke-width="2"/>
+          <path d="m175 89 38 22v45m-178-67v72l51 29" stroke="#9db3d8" stroke-dasharray="4 5"/>
+          <circle cx="213" cy="156" r="3" fill="#9db3d8"/>
+          <circle cx="86" cy="190" r="3" fill="#9db3d8"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" id="case" aria-labelledby="case-title">
+      <p class="eyebrow">대표 사례</p>
+      <h2 id="case-title">매장 보고 자동화</h2>
+      <div class="flows">
+        <div class="flow">
+          <h3>바뀌기 전</h3>
+          <ol class="steps">
+            <li>POS 자료 직접 수집</li>
+            <li>보고서에 숫자 옮기기</li>
+            <li>원자료와 다시 대조</li>
+          </ol>
+        </div>
+        <div class="flow flow-after">
+          <h3>바뀐 뒤</h3>
+          <ol class="steps">
+            <li>새벽 POS 수집</li>
+            <li>노션 정리</li>
+            <li>보고 초안과 그림</li>
+            <li>사람이 검산</li>
+          </ol>
+        </div>
+      </div>
+      <figure class="report-demo">
+        <figcaption id="demo-caption">데모 화면 · 예시 데이터</figcaption>
+        <svg viewBox="0 0 300 124" role="img" aria-labelledby="demo-caption demo-values" xmlns="http://www.w3.org/2000/svg">
+          <desc id="demo-values">일자 2099년 1월 1일, 순매출 1,234,000원, 인당생산성 12,340원/인</desc>
+          <rect x=".5" y=".5" width="299" height="123" rx="8" class="report-frame"/>
+          <path d="M16 41.5h268M16 82.5h268" class="report-divider"/>
+          <g class="report-label">
+            <text x="16" y="26">일자</text>
+            <text x="16" y="67">순매출</text>
+            <text x="16" y="108">인당생산성</text>
+          </g>
+          <g class="report-value" text-anchor="end">
+            <text x="284" y="26">2099-01-01</text>
+            <text x="284" y="67">1,234,000원</text>
+            <text x="284" y="108">12,340원/인</text>
+          </g>
+        </svg>
+      </figure>
+      <div class="rules">
+        <h3>직접 정한 기준</h3>
+        <ul>
+          <li>숫자는 원자료 그대로</li>
+          <li>추정은 추정이라고 표시</li>
+          <li>최종 판단은 사람</li>
+        </ul>
+      </div>
+      <div class="case-tools">
+        <h3 id="tools-title">사용한 도구</h3>
+        <ul class="tools" aria-labelledby="tools-title">
+          <li>Claude</li>
+          <li>Codex</li>
+          <li>ChatGPT</li>
+          <li>Notion</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="exception-title">
+      <h2 id="exception-title">예외 처리</h2>
+      <div class="exception">
+        <span class="status">확인 대기</span>
+        <p>새벽에 들어와야 할 POS 파일이 없으면 보고서의 해당 항목을 비워 두고, 원자료를 확인할 때까지 기다립니다.</p>
+      </div>
+      <p class="gate">일이 있을 때만 AI를 부르고, 자료가 낡으면 다시 확인한다.</p>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">다른 작업</h2>
+      <dl class="projects">
+        <div><dt>3D 상태판</dt><dd>상태를 한눈에</dd></div>
+        <div><dt>AI 회의실</dt><dd>의견과 결론을 나눔</dd></div>
+        <div><dt>조사 공장</dt><dd>후보 조사와 출처 확인을 나눔</dd></div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="division-title">
+      <h2 id="division-title">일을 나눈 기준</h2>
+      <dl class="notes">
+        <div><dt>원래 번거로웠던 일</dt><dd>매일 POS 자료를 찾아 보고서에 옮기는 일.</dd></div>
+        <div><dt>내가 정한 규칙</dt><dd>원자료 값을 유지하고 추정은 표시한다.</dd></div>
+        <div><dt>AI가 맡은 일</dt><dd>정리된 자료로 보고 초안과 그림을 만든다.</dd></div>
+        <div><dt>사람이 끝까지 맡는 일</dt><dd>원자료와 대조하고 보고할 내용을 최종 판단한다.</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>2026년 9월부터 거의 매일 GitHub에 작업 기록을 남기고 있습니다.</p>
+    <a href="https://github.com/yeongman-builds">github.com/yeongman-builds <span aria-hidden="true">↗</span></a>
+    <p>이 페이지도 AI(Codex)와 함께 만들었습니다.</p>
+  </footer>
+</body>
+</html>
