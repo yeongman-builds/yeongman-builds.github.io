@@ -274,7 +274,61 @@ dd { color: var(--muted); }
 .footer a:hover { color: var(--text); }
 .footer p { color: var(--muted); font-size: .875rem; }
 
+.open {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .9rem;
+  padding: .3rem .75rem;
+  border: 1px solid var(--blue-light);
+  border-radius: 1rem;
+  background: var(--surface);
+  color: var(--blue-dark);
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.open .dot {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background: #2fa36b;
+  box-shadow: 0 0 0 3px #d9f2e6;
+}
+
+.actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.75rem; }
+.actions .button { margin-top: 0; }
+.button-line { background: var(--background); color: var(--blue-dark); border: 1px solid var(--blue); }
+.button-line:hover { background: var(--surface); color: var(--blue-dark); }
+
+.lead { color: var(--muted); margin-bottom: 1rem; }
+
+.team {
+  display: grid;
+  gap: .6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team li {
+  display: grid;
+  gap: .15rem;
+  padding: .85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .55rem;
+  background: var(--surface);
+}
+
+.team strong { color: var(--text); font-size: 1rem; }
+.team li > span:last-child { color: var(--muted); font-size: .9rem; }
+.team-role { color: var(--blue); font-family: var(--mono); font-size: .8125rem; font-weight: 700; }
+.team-me { border-color: var(--blue); background: var(--background); }
+
+.contact { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
+
 @media (min-width: 43rem) {
+  .team { grid-template-columns: repeat(4, 1fr); }
   .flows { grid-template-columns: 1fr 1fr; }
   .flow { padding: 1.25rem; }
   .notes > div { grid-template-columns: 13rem 1fr; }
