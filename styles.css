@@ -344,7 +344,6 @@ dd { color: var(--muted); }
 
 @media (min-width: 43rem) {
   .team { grid-template-columns: repeat(4, 1fr); }
-  .pdfs { grid-template-columns: 1fr 1fr; }
   .flows { grid-template-columns: 1fr 1fr; }
   .flow { padding: 1.25rem; }
   .notes > div { grid-template-columns: 13rem 1fr; }
